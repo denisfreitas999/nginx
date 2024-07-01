@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erro!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .error-container {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="alert alert-danger" role="alert">
+            <h1 class="alert-heading">Erro!</h1>
+            <p id="error-message"></p>
+        </div>
+        <div class="error-actions">
+            <button class="btn btn-primary" onclick="goBack()">Voltar à página anterior</button>
+            <button class="btn btn-secondary" onclick="goHome()">Ir para a página inicial</button>
+        </div>
+    </div>
+
+    <script>
+        const errorCode = getErrorCode();
+        const errorMessage = getErrorMessage(errorCode);
+        document.getElementById("error-message").innerHTML = errorMessage;
+
+        function getErrorCode() {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get('code');
+        }
+
+        function getErrorMessage(code) {
+            switch (code) {
+                case '400':
+                    return "Requisição inválida";
+                case '401':
+                    return "Acesso negado";
+                case '404':
+                    return "Página não encontrada";
+                default:
+                    return "Erro desconhecido";
+            }
+        }
+
+        function goBack() {
+            window.history.back();
+        }
+
+        function goHome() {
+            window.location.href = "/";
+        }
+    </script>
+</body>
+</html>

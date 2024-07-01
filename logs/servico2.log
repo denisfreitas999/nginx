@@ -1,0 +1,4 @@
+127.0.0.1 - - [01/Jul/2024:18:48:48 -0300] "GET / HTTP/1.0" 200 240 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+Remote Addr: 127.0.0.1, Time: [01/Jul/2024:18:54:22 -0300], Request: "GET / HTTP/1.0" Status: 200, Referer: "-" 
+Remote Addr: 127.0.0.1, Time: [01/Jul/2024:19:00:28 -0300], Request: "GET / HTTP/1.0" Status: 200
+Remote Addr: 127.0.0.1, Time: [01/Jul/2024:19:00:29 -0300], Request: "GET / HTTP/1.0" Status: 304
