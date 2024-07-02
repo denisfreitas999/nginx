@@ -1,0 +1,61 @@
+/* estilo.css */
+
+/* Cor de fundo */
+body {
+    background-color: #f2f2f2; /* cor de fundo clara */
+  }
+  
+  /* Container */
+  .container {
+    max-width: 800px; /* largura máxima do container */
+    margin: 40px auto; /* margem superior e inferior de 40px e centralizado */
+    padding: 20px; /* padding de 20px */
+    background-color: #fff; /* cor de fundo branca */
+    border: 1px solid #ddd; /* borda de 1px com cor de fundo clara */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* sombra leve */
+  }
+  
+  /* Jumbotron */
+  .jumbotron {
+    background-color: #fff; /* cor de fundo branca */
+    padding: 40px; /* padding de 40px */
+    border-radius: 10px; /* borda arredondada */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* sombra leve */
+  }
+  
+  /* Título */
+  .display-3 {
+    font-size: 36px; /* tamanho do título */
+    font-weight: bold; /* negrito */
+    color: #333; /* cor do título */
+    margin-bottom: 20px; /* margem inferior do título */
+  }
+  
+  /* Imagem */
+  .img-fluid {
+    width: 100%; /* largura da imagem */
+    height: 300px; /* altura da imagem */
+    object-fit: cover; /* imagem se adapta ao tamanho do container */
+    border-radius: 10px; /* borda arredondada */
+  }
+  
+  /* Parágrafo */
+  .lead {
+    font-size: 18px; /* tamanho do parágrafo */
+    color: #666; /* cor do parágrafo */
+    margin-bottom: 40px; /* margem inferior do parágrafo */
+  }
+  
+  /* Botão (opcional) */
+  .btn {
+    background-color: #4CAF50; /* cor do botão */
+    color: #fff; /* cor do texto do botão */
+    padding: 10px 20px; /* padding do botão */
+    border: none; /* borda do botão */
+    border-radius: 5px; /* borda arredondada do botão */
+    cursor: pointer; /* cursor do botão */
+  }
+  
+  .btn:hover {
+    background-color: #3e8e41; /* cor do botão ao passar o mouse */
+  }
